@@ -1,0 +1,11 @@
+<div class="invisible prev">&lt;</div>
+	<div class="carousel-inner">
+		<% _.each(carouseldata, function(block, blockindex) { %>
+			<div class="imageblock">
+				<% _.each(block.images, function(item) { %>
+					<img class="hidden carousel-image" src="<%- item %>" data-blocknumber="<%- blockindex %>" />
+				<% }) %>
+			</div>
+		<% }) %>
+	</div>
+<div class="next">&gt;</div>
